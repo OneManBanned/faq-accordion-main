@@ -1,0 +1,31 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-pink: hsl(275, 100%, 97%);
+    --grayish-purple: hsl(292, 16%, 49%);
+    --dark-purple: hsl(292, 42%, 14%);
+}
+
+h1 {
+    display: flex;
+}
+
+body {
+    background: var(--light-pink) url(./assets/images/background-pattern-mobile.svg) no-repeat;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    background-color: var(--white);
+    max-width: 50%;
+}
+
+@media (min-width: 20rem) {
+    body {
+        background-image: url(./assets/images/background-pattern-desktop.svg);
+        background-size: 100%;
+    }
+
+}
