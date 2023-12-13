@@ -22,6 +22,39 @@ main {
     max-width: 50%;
 }
 
+li {
+    display: grid;
+    grid-template-rows: 1fr 0fr;
+    transition: grid-template-rows 500ms;
+}
+
+input {
+    display: none;
+}
+
+label {
+    background: url(./assets/images/icon-plus.svg) no-repeat;
+}
+
+input:checked+label {
+    background-image: url(./assets/images/icon-minus.svg);
+}
+
+div {
+    display: flex;
+    grid-row: 1/2;
+}
+
+li>.item-content {
+    overflow: hidden;
+    grid-row: 2/3;
+}
+
+li:has(div>input:checked) {
+    cursor: pointer;
+    grid-template-rows: 1fr 1fr;
+}
+
 @media (min-width: 20rem) {
     body {
         background-image: url(./assets/images/background-pattern-desktop.svg);
