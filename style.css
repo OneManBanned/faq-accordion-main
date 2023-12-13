@@ -1,3 +1,11 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 :root {
     --white: hsl(0, 0%, 100%);
     --light-pink: hsl(275, 100%, 97%);
@@ -19,12 +27,13 @@ body {
 
 main {
     background-color: var(--white);
-    max-width: 50%;
+    max-width: 90%;
+
 }
 
 li {
     display: grid;
-    grid-template-rows: 1fr 0fr;
+    grid-template-rows: auto 0fr;
     transition: grid-template-rows 500ms;
 }
 
@@ -33,7 +42,13 @@ input {
 }
 
 label {
-    background: url(./assets/images/icon-plus.svg) no-repeat;
+    display: flex;
+    align-items: center;
+    background: right url(./assets/images/icon-plus.svg) red no-repeat;
+    padding-block: 1rem;
+    width: 100%;
+    cursor: pointer;
+    padding-right: 2rem;
 }
 
 input:checked+label {
@@ -45,20 +60,27 @@ div {
     grid-row: 1/2;
 }
 
+li>.item-heading {
+    cursor: pointer;
+}
+
 li>.item-content {
     overflow: hidden;
     grid-row: 2/3;
 }
 
 li:has(div>input:checked) {
-    cursor: pointer;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto 1fr;
 }
 
 @media (min-width: 20rem) {
     body {
         background-image: url(./assets/images/background-pattern-desktop.svg);
         background-size: 100%;
+    }
+
+    main {
+        max-width: 50%;
     }
 
 }
