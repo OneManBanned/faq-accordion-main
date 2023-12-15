@@ -36,6 +36,7 @@ main {
     background-color: var(--white);
     max-width: 89%;
     padding: 1.5rem;
+    padding-block-end: 0;
     border-radius: .5rem;
 }
 
@@ -68,7 +69,7 @@ button {
     background: right url(./assets/images/icon-minus.svg) no-repeat;
     padding-block: 1rem;
     width: 100%;
-    cursor: pointer;
+    cursor: url(./assets/images/handcursor_114633.png), pointer;
     border: none;
     padding-right: 4.45rem;
     text-align: left;
@@ -76,14 +77,22 @@ button {
     font-size: 1rem;
     color: var(--dark-purple);
     padding-block: 1.5rem;
+    outline: none;
+    transition: color .5s ease;
+}
+
+button:focus-visible {
+    outline: medium solid var(--grayish-purple);
+    background-color: var(--light-pink);
+    border-radius: .5rem;
+}
+
+button:hover {
+    color: rgb(187, 69, 240);
 }
 
 button[aria-expanded="false"] {
     background-image: url(./assets/images/icon-plus.svg);
-}
-
-li:last-of-type>h2>button {
-    padding-block-end: 0;
 }
 
 div {
@@ -104,24 +113,42 @@ p {
     padding-block-end: 1rem;
 }
 
-li:last-of-type>div>p {
-    padding-block: 1rem 0rem;
-}
-
 li:has(h2>button[aria-expanded="true"]) {
     grid-template-rows: auto 1fr;
     visibility: visible;
 }
 
-@media (min-width: 25rem) {
+@media (min-width: 23.5rem) {
     body {
         background-image: url(./assets/images/background-pattern-desktop.svg);
         background-size: 100%;
     }
 
     main {
-        min-width: 90%;
-        max-width: 10rem;
+        width: 90%;
+        max-width: 30.25rem;
+        padding: 2rem;
+        padding-block-end: 0;
+    }
+
+    h1 {
+        font-size: 2.75rem;
+        margin-block-end: .27rem;
+    }
+
+    .logo {
+        width: 7%;
+        min-width: 2.25rem;
+    }
+
+    button {
+        background-size: 1.75rem;
+        padding-right: 2.25rem;
+        font-size: .9rem;
+    }
+
+    p {
+        font-size: .8rem;
     }
 
 }
