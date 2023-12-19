@@ -1,6 +1,5 @@
 const faqs = document.querySelectorAll('li')
 const btns = document.querySelectorAll('button')
-console.log(faqs, btns)
 btns.forEach((btn, i) => btn.addEventListener('click', (e) => clickOnFAQ(e, btn, i)))
 
 function clickOnFAQ(e, btn, i) {
@@ -18,7 +17,6 @@ function closeOtherFAQs(clicked) {
             faqs[j].children[1].setAttribute('hidden', '')
         }
     })
-
 }
 
 
