@@ -25,8 +25,8 @@ Users should be able to:
 ![](./assets/images/Screenshot%202023-12-19%20at%2019-42-56%20Frontend%20Mentor%20FAQ%20accordion.png)
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor]([https://your-solution-url.com](https://www.frontendmentor.io/solutions/frontend-mentor-faq-accordion-solution-WRzX6gVJWq))
+- Live Site URL: [Live project]([https://your-live-site-url.com](https://onemanbanned.github.io/faq-accordion-main/))
 
 ### Built with
 
