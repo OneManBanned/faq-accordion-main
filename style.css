@@ -172,12 +172,12 @@ li:has(h2>button[aria-expanded="true"]) {
         background-size: 1.75rem;
         background-position: calc(100% - 1rem) center;
         padding-right: 2.25rem;
-        font-size: .9rem;
+        font-size: 1rem;
         padding-inline: 1rem 2.5rem;
     }
 
     p {
-        font-size: .8rem;
+        font-size: 1rem;
         padding-inline: 1rem;
     }
 }
