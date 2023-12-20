@@ -25,6 +25,10 @@
     --bold: 700;
 }
 
+html {
+    font-size: 16px;
+}
+
 /* Mobile */
 
 body {
@@ -124,7 +128,7 @@ li>.answer {
 p {
     color: var(--grayish-purple);
     font-weight: var(--light);
-    font-size: .9rem;
+    font-size: 1rem;
     line-height: 1.2rem;
     padding-block-end: 1rem;
 }
